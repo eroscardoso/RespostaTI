@@ -16,6 +16,7 @@ Acrescentaria o campo “Endereço de serviço” na tabela Ordem de Serviço
 
 
 Questão 3. Utilizando qualquer Linguagem de Consulta Estruturada (SQL) e considerando a nova estrutura de dados criada na questão anterior:
+    
     a. Selecione todos os clientes e a quantidade de ordem de serviços
 SELECT CLIENTE.NOME, COUNT(*), ORDEM_DE_SERVICO.ID WHERE CLIENTE.ID = ORDEM_DE_SERVICO.IDCLIENTE
 
