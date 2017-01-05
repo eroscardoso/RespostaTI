@@ -3,9 +3,9 @@ Resposta TI - Eros P Cardoso
 
 Questão 1. Quais alterações devemos fazer nessa estrutura para que o cliente consiga fazer mais de um serviço por solicitação?
 
-Criaria uma nova entidade (Solicitação) em que cada solicitação (1) pode ter vários serviços atrelados. A tabela Solicitação teria os seguintes campos:
-ID (auto incrementável)
-ID Serviço
+Criaria uma nova entidade (Solicitação) em que cada solicitação () pode ter vários serviços atrelados. A tabela Solicitação teria os seguintes campos:
+ID (auto incrementável),
+ID Serviço,
 ID Ordem Serviço
 
 A outra alteração seria na tabela Ordem de Serviço, onde eu removeria o campo ID Serviço.
