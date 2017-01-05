@@ -1,7 +1,7 @@
 # RespostaTI
 Resposta TI - Eros P Cardoso
 
-1. Quais alterações devemos fazer nessa estrutura para que o cliente consiga fazer mais de um serviço por solicitação?
+Questão 1. Quais alterações devemos fazer nessa estrutura para que o cliente consiga fazer mais de um serviço por solicitação?
 
 Criaria uma nova entidade (Solicitação) em que cada solicitação (1) pode ter vários serviços atrelados. A tabela Solicitação teria os seguintes campos:
 ID (auto incrementável)
@@ -11,12 +11,12 @@ ID Ordem Serviço
 A outra alteração seria na tabela Ordem de Serviço, onde eu removeria o campo ID Serviço.
 
 
-2. E se a mesma ordem de serviço tivesse serviços para endereços diferentes. Como ficaria a nova estrutura de dados?
+Questão 2. E se a mesma ordem de serviço tivesse serviços para endereços diferentes. Como ficaria a nova estrutura de dados?
 
 Acrescentaria o campo “Endereço de serviço” na tabela Ordem de Serviço
 
 
-3. Utilizando qualquer Linguagem de Consulta Estruturada (SQL) e considerando a nova estrutura de dados criada na questão anterior:
+Questão 3. Utilizando qualquer Linguagem de Consulta Estruturada (SQL) e considerando a nova estrutura de dados criada na questão anterior:
     
     a. Selecione todos os clientes e a quantidade de ordem de serviços
 SELECT CLIENTE.NOME, COUNT(*), ORDEM_DE_SERVICO.ID WHERE CLIENTE.ID = ORDEM_DE_SERVICO.IDCLIENTE
