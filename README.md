@@ -15,7 +15,7 @@ A outra alteração seria na tabela Ordem de Serviço, onde eu removeria o campo
 Acrescentaria o campo “Endereço de serviço” na tabela Ordem de Serviço
 
 
-3. Utilizando qualquer Linguagem de Consulta Estruturada (SQL) e considerando a nova estrutura de dados criada na questão anterior:
+2. Utilizando qualquer Linguagem de Consulta Estruturada (SQL) e considerando a nova estrutura de dados criada na questão anterior:
     a. Selecione todos os clientes e a quantidade de ordem de serviços
 SELECT CLIENTE.NOME, COUNT(*), ORDEM_DE_SERVICO.ID WHERE CLIENTE.ID = ORDEM_DE_SERVICO.IDCLIENTE
 
